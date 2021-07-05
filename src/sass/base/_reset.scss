@@ -20,3 +20,6 @@ li {
 a {
   text-decoration: none;
 }
+.btn {
+  @include btn-default(#000, #fff);
+}
