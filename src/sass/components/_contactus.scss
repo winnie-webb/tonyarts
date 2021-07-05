@@ -3,12 +3,11 @@
   align-items: center;
   width: 90%;
   margin: 4rem auto;
-  height: 80vh;
   box-shadow: rgba(117, 101, 101, 0.4) 0px 2px 8px 0px;
   border-radius: 0.8rem;
-
+  height: 55rem;
   &__form {
-    width: 50%;
+    flex: 1;
     padding: 3rem;
     &Input {
       width: 100%;
@@ -18,7 +17,7 @@
     }
   }
   &__imageWrapper {
-    width: 50%;
+    flex: 1;
     height: 100%;
     @include backgroundImageDefault(url("../../images/contactus.jpg"));
   }
@@ -44,4 +43,9 @@
   min-height: 20rem;
   min-width: 100%;
   max-width: 100%;
+}
+@media (max-width: 700px) {
+  .contact-us__form {
+    width: 100%;
+  }
 }

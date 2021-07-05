@@ -4,6 +4,7 @@
     font-size: 4rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    text-align: center;
   }
   &__imageWrapper {
     transition: box-shadow 0.4s;
@@ -21,11 +22,11 @@
   border-radius: 0.8rem;
   margin-top: 3rem;
   @include center-verticalFlex;
-  height: 30vh;
-  padding: 10rem 0;
+  padding: 4rem;
   &Heading {
     font-size: 4rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
   &Btn {
     margin-top: 2rem;
@@ -41,5 +42,15 @@
   & img {
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .artwork-view {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .artwork-view {
+    grid-template-columns: 1fr;
   }
 }

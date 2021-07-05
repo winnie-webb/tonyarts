@@ -11,7 +11,7 @@ import horsesArt from "../../images/horses.jpg";
 const Artwork = () => {
   return (
     <section className="artwork">
-      <h2 className="artwork__heading">Get Started</h2>
+      <h2 className="artwork__heading heading">Get Started</h2>
       <div className="artwork-view">
         <div className="artwork__imageWrapper">
           <img src={wolvesArt} alt="Painting of wolves" />
@@ -33,7 +33,9 @@ const Artwork = () => {
         </div>
       </div>
       <div className="artwork__ask">
-        <h2 className="artwork__askHeading">See anything interesting ?</h2>
+        <h2 className="artwork__askHeading heading">
+          See anything interesting ?
+        </h2>
         <p>
           Don't worry if these are not what you're looking for. You can get
           anything done as long as it is an artwork

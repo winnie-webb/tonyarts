@@ -2,9 +2,9 @@ import * as React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="contact-us">
+    <section className="contact-us flex-column">
       <form className="contact-us__form" method="POST">
-        <h2 className="contact-us__heading">Get in touch</h2>
+        <h2 className="contact-us__heading heading">Get in touch</h2>
 
         <div className="inputWrapper">
           <label htmlFor="name">Name</label>

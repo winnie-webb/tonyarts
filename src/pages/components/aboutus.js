@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="about-us">
+    <section className="about-us flex-column">
       <div className="about-us__imageWrapper"></div>
       <div className="about-us__contentWrapper">
-        <h2 className="about-us__heading">What we're about</h2>
+        <h2 className="about-us__heading heading">What we're about</h2>
         <p className="about-us__content">
           Tonyarts is currently captained by a well known artist, Anthony Lname,
           in the St.James region of Jamaica. He can do anything that has to do
