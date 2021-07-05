@@ -7,6 +7,7 @@ import Hero from "./components/hero";
 import Artwork from "./components/artwork";
 import AboutUs from "./components/aboutus";
 import ContactUs from "./components/contactus";
+import Footer from "./layouts/footer";
 const HomePage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const HomePage = () => {
           <Artwork></Artwork>
           <AboutUs></AboutUs>
           <ContactUs></ContactUs>
+          <Footer></Footer>
         </article>
       </main>
     </>
