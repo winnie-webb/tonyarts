@@ -1,0 +1,16 @@
+@mixin backgroundImageDefault($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin center-verticalFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin center-horizontalFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
