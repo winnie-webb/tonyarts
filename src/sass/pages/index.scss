@@ -55,9 +55,29 @@
     margin-bottom: 5rem;
   }
   &__imageWrapper {
-    box-shadow: rgba(139, 124, 124, 0.2) 0px 2px 8px 0px;
+    transition: box-shadow 0.4s;
+    cursor: pointer;
     padding: 1rem;
     height: 35rem;
+    &:hover {
+      box-shadow: rgba(139, 124, 124, 0.4) 0px 2px 8px 0px;
+    }
+  }
+}
+.artwork__ask {
+  background-color: #dfe6e9;
+  box-shadow: rgba(139, 124, 124, 0.4) 0px 2px 8px 0px;
+  border-radius: 0.8rem;
+  margin-top: 3rem;
+  @include center-verticalFlex;
+  height: 30vh;
+  padding: 10rem 0;
+  &Heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  &Btn {
+    margin-top: 2rem;
   }
 }
 .artwork-view {

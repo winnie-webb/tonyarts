@@ -26,23 +26,33 @@ const HomePage = () => {
             <h2 className="artwork__heading">Get Started</h2>
             <div className="artwork-view">
               <div className="artwork__imageWrapper">
-                <img src={wolvesArt} />
+                <img src={wolvesArt} alt="Painting of wolves" />
               </div>
               <div className="artwork__imageWrapper">
-                <img src={spiritJM} />
+                <img src={spiritJM} alt="Jamaican Art" />
               </div>
               <div className="artwork__imageWrapper">
-                <img src={bob} />
+                <img src={bob} alt="Bob Marley painting" />
               </div>
               <div className="artwork__imageWrapper">
-                <img src={fishes} />
+                <img src={fishes} alt="Painting of two fishes" />
               </div>
               <div className="artwork__imageWrapper">
-                <img src={carvingArt} />
+                <img src={carvingArt} alt="Jamaican Sculpture" />
               </div>
               <div className="artwork__imageWrapper">
-                <img src={horsesArt} />
+                <img src={horsesArt} alt="Oil painting of two horses" />
               </div>
+            </div>
+            <div className="artwork__ask">
+              <h2 className="artwork__askHeading">
+                See anything interesting ?
+              </h2>
+              <p>
+                Don't worry if none of these are what you are looking for. You
+                can get anything done as long as it is an artwork
+              </p>
+              <div className="artwork__askBtn btn">Contact Us</div>
             </div>
           </section>
         </article>
