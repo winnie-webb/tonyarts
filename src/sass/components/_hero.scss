@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  height: 90vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  animation: fade-in 0.7s;
+  &__imageWrapper {
+    flex: 1;
+    @include backgroundImageDefault(url("../../images/hero.jpg"));
+  }
+
+  &__heading {
+    font-size: 5rem;
+  }
+  &__contentWrapper {
+    font-size: 2rem;
+    padding: 1rem;
+    flex: 1;
+    padding-top: 2rem;
+    @include center-verticalFlex;
+  }
+  &__logo {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+.hero__btn {
+  margin-top: 2rem;
+}

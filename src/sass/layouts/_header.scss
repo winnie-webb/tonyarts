@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: fade-in 0.7s;
+
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.header__navLinks {
+  margin: 0 2rem;
+}

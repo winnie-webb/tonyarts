@@ -1,0 +1,46 @@
+.contact-us {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 4rem auto;
+  height: 80vh;
+  box-shadow: rgba(117, 101, 101, 0.2) 0px 2px 8px 0px;
+
+  &__form {
+    width: 50%;
+    padding: 3rem;
+    &Input {
+      width: 100%;
+      display: block;
+      margin-top: 0.5rem;
+      padding: 1rem;
+    }
+  }
+  &__imageWrapper {
+    width: 50%;
+    height: 100%;
+    @include backgroundImageDefault(url("../../images/contactus.jpg"));
+  }
+}
+.contact-us__heading {
+  text-align: center;
+  font-size: 4rem;
+}
+.contact-us__formBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.inputWrapper {
+  margin-bottom: 2rem;
+}
+#message {
+  height: 20rem;
+  max-height: 20rem;
+  min-height: 20rem;
+  min-width: 100%;
+  max-width: 100%;
+}

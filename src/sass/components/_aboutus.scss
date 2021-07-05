@@ -1,0 +1,32 @@
+.about-us {
+  width: 90%;
+  margin: auto;
+  border-radius: 0.8rem;
+  margin-top: 5rem;
+  height: 90vh;
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &__imageWrapper {
+    height: 100%;
+    flex: 1;
+    @include backgroundImageDefault(url("../../images/aboutus.jpg"));
+  }
+  &__heading {
+    font-size: 4rem;
+  }
+  &__contentWrapper {
+    @include center-verticalFlex;
+    padding: 3rem;
+    flex: 1;
+  }
+  &__content {
+    line-height: 2.4rem;
+    font-size: 2rem;
+  }
+  &__btn {
+    margin-top: 2rem;
+    width: 20rem;
+    text-align: center;
+  }
+}
