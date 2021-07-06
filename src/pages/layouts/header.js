@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../../images/tonyarts-logos_black.png";
 
-const Header = () => {
+const Header = (props) => {
+  const { aboutUsRef, contactUsRef } = props;
   return (
     <header className="header">
       <div className="header__logoWrapper">
@@ -11,8 +12,26 @@ const Header = () => {
       </div>
       <nav>
         <ul className="header__nav">
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li>
+            <a
+              href="#about-us"
+              onClick={() => {
+                aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              onClick={() => {
+                contactUsRef.current.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact Us
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

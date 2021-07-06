@@ -1,8 +1,8 @@
 import React from "react";
 
-const AboutUs = () => {
+const AboutUs = ({ aboutUsRef, contactUsRef }) => {
   return (
-    <section className="about-us flex-column">
+    <section ref={aboutUsRef} className="about-us flex-column">
       <div className="about-us__imageWrapper"></div>
       <div className="about-us__contentWrapper">
         <h2 className="about-us__heading heading">What we're about</h2>
@@ -12,7 +12,14 @@ const AboutUs = () => {
           with creativeness. Here at Tonyarts we accept any request you have and
           strive to do our absolute best in turning <b>your reality into art</b>
         </p>
-        <div className="about-us__btn btn">Contact Us</div>
+        <div
+          className="about-us__btn btn"
+          onClick={() => {
+            contactUsRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Contact Us
+        </div>
       </div>
     </section>
   );

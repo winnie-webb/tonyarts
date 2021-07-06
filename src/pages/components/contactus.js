@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import axios from "axios";
-const ContactUs = () => {
+const ContactUs = ({ contactUsRef }) => {
   const [serverState, setServerState] = useState({
     submitting: false,
     status: { ok: "", msg: "Send Message" },
@@ -37,7 +37,7 @@ const ContactUs = () => {
       });
   };
   return (
-    <section className="contact-us flex-column">
+    <section ref={contactUsRef} className="contact-us flex-column">
       <form
         onSubmit={handleSubmit}
         className="contact-us__form"

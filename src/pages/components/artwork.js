@@ -8,9 +8,9 @@ import wolvesArt from "../../images/wolves.jpg";
 import carvingArt from "../../images/carving.jpg";
 import horsesArt from "../../images/horses.jpg";
 
-const Artwork = () => {
+const Artwork = ({ contactUsRef, artworkRef }) => {
   return (
-    <section className="artwork">
+    <section ref={artworkRef} className="artwork">
       <h2 className="artwork__heading heading">Get Started</h2>
       <div className="artwork-view">
         <div className="artwork__imageWrapper">
@@ -40,7 +40,14 @@ const Artwork = () => {
           Don't worry if these are not what you're looking for. You can get
           anything done as long as it is an artwork
         </p>
-        <div className="artwork__askBtn btn">Contact Us</div>
+        <div
+          className="artwork__askBtn btn"
+          onClick={() => {
+            contactUsRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Contact Us
+        </div>
       </div>
     </section>
   );
