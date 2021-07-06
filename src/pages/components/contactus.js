@@ -29,6 +29,7 @@ const ContactUs = () => {
       data: new FormData(form),
     })
       .then((r) => {
+        console.log(new FormData(form));
         handleServerResponse(true, "Message was sent!", form);
       })
       .catch((r) => {
@@ -67,12 +68,11 @@ const ContactUs = () => {
         </div>
         <div className="form-btnWrapper">
           <button className="btn contact-us__formBtn" type="submit">
-            Send Message
+            {serverState.status.msg}
           </button>
         </div>
       </form>
       <div className="contact-us__imageWrapper"></div>
-      <p>{serverState.status.msg}</p>
     </section>
   );
 };
