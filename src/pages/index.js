@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useRef } from "react";
+import { Helmet } from "react-helmet";
 import "../sass/pages/index.scss";
 // Layouts
 import Header from "./layouts/header";
@@ -15,6 +16,17 @@ const HomePage = () => {
   const artworkRef = useRef();
   return (
     <>
+      <Helmet>
+        <meta
+          name="google-site-verification"
+          content="oVgzEg0K-Y3nGjK5U3yu68Xafz7tz3oYD9X2oeaAzBY"
+        />
+        <meta
+          name="description"
+          content="Get any form of artwork completed including: sculptures, paintings, and drawings"
+        ></meta>
+        <title>Tonyarts Homepage</title>
+      </Helmet>
       <Header aboutUsRef={aboutUsRef} contactUsRef={contactUsRef}></Header>
       <main>
         <article>

@@ -14,7 +14,7 @@ const Header = (props) => {
         <ul className="header__nav">
           <li>
             <a
-              href="#about-us"
+              href="#"
               onClick={() => {
                 aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
               }}
@@ -24,7 +24,7 @@ const Header = (props) => {
           </li>
           <li>
             <a
-              href="#about-us"
+              href="#"
               onClick={() => {
                 contactUsRef.current.scrollIntoView({ behavior: "smooth" });
               }}

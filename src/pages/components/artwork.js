@@ -11,7 +11,7 @@ import horsesArt from "../../images/horses.jpg";
 const Artwork = ({ contactUsRef, artworkRef }) => {
   return (
     <section ref={artworkRef} className="artwork">
-      <h2 className="artwork__heading heading">Get Started</h2>
+      <h2 className="artwork__heading heading">Most Popular</h2>
       <div className="artwork-view">
         <div className="artwork__imageWrapper">
           <img src={wolvesArt} alt="Painting of wolves" />
